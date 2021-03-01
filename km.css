@@ -1,0 +1,7 @@
+body {
+    background-image: url("back.jpg");
+    background-size: cover;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    color: brown;
+}

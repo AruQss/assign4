@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="km.css">
+    <script type="text/javascript" src="kalynm.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>"Kalyn Mal" Calculator</h1>
+        <label for="name">Name of Groom:</label>
+        <input type="text" class="name" name="name">
+        <br>
+        <label for="startingBid">Starting bid:</label>
+        <input type="text" class="startingBid" name="startingBid">
+        <br>
+        <label for="education">Groom's education:</label>
+        <select id="education">
+            <option value=1.5>Undergraduate degree</option>
+            <option value=1.2>College degree</option>
+            <option value=1.05>High school degree</option>
+            <option value=0.9>Middle school degree</option>
+        </select><br><br>
+
+        <label for="family">Groom's family net worth:</label>
+        <select id="family">
+            <option value=2>More than 100,000$</option>
+            <option value=1.5>Between 50,000$ and 100,000$</option>
+            <option value=1.2>Less than 50,000$</option>
+        </select><br>
+
+        <p>Groom's skills</p>
+        <input type="checkbox" class="skills" name="dombra" value=100>
+        <label for="dombra">Playing on dombra</label><br>
+        <input type="checkbox" class="skills" name="cook" value=200>
+        <label for="cook">Good cook</label><br>
+        <input type="checkbox" class="skills" name="character" value=150>
+        <label for="character">Easygoing character</label><br>
+        <input type="checkbox" class="skills" name="sing" value=100>
+        <label for="sing">Sings well</label><br>
+        <form>
+            <p>Groom's age</p>
+            <input type="radio" class="ages" name="ages" value=1.5>
+            <label for="age1">Between 18-23</label><br>
+            <input type="radio" class="ages" name="ages" value=1.2>
+            <label for="age2">Between 24-27</label><br>
+            <input type="radio" class="ages" name="ages" value=0.95>
+            <label for="age3">28+</label><br>
+        </form>
+
+        <p>Groom's reputation</p>
+        <input type="checkbox" class="gossips" name="gossips1" value=0.85>
+        <label for="gossips1">Gossips about his parent's attitude</label><br>
+        <input type="checkbox" class="gossips" name="gossips2" value=0.9>
+        <label for="gossips2">Gossips about his character</label><br>
+        <input type="checkbox" class="gossips" name="gossips3" value=200>
+        <label for="gossips3">General gossips around his person</label><br>
+        <p>Love letter</p>
+        <textarea id="loveLetter" name="loveLetter" rows="4" cols="50"maxlength="500"></textarea> <br>
+
+        <button id="calcBtn">Calculate Kalyn Mal</button>
+        <p id="result"></p>
+       <script>
+         document.getElementById("calcBtn").addEventListener("click", calculate);
+       </script>
+    </div>
+</body>
+
+</html>
